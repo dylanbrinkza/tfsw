@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Material Storage Checklist</title>
+    <link rel="stylesheet" href="dailychecklist.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Raw Material Storage Checklist</h1>
+        <form id="raw-material-form">
+            <div class="form-group">
+                <label for="receiving-bay-clean">Is the Receiving bay area clean with no unused equipment’s or pallets:</label>
+                <div class="answer">
+                    <input type="radio" id="receiving-bay-clean-yes" name="receiving-bay-clean" value="yes">
+                    <label for="receiving-bay-clean-yes">Yes</label>
+                    <input type="radio" id="receiving-bay-clean-no" name="receiving-bay-clean" value="no">
+                    <label for="receiving-bay-clean-no">No</label>
+                </div>
+                <textarea id="receiving-bay-clean-comments" name="receiving-bay-clean-comments" placeholder="Comments" disabled></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="floors-walls-clean">Are the floors, walls, ceiling, Door, Window clean. No chipped or cracked walls or flaking paint. No opening in the roof. Is Camera in free of dust and not broken:</label>
+                <div class="answer">
+                    <input type="radio" id="floors-walls-clean-yes" name="floors-walls-clean" value="yes">
+                    <label for="floors-walls-clean-yes">Yes</label>
+                    <input type="radio" id="floors-walls-clean-no" name="floors-walls-clean" value="no">
+                    <label for="floors-walls-clean-no">No</label>
+                </div>
+                <textarea id="floors-walls-clean-comments" name="floors-walls-clean-comments" placeholder="Comments" disabled></textarea>
+            </div>
+
+            <!-- Add more checklist items here -->
+            
+            <button type="submit" id="submit-btn" disabled>Submit</button>
+        </form>
+    </div>
+    <script src="dailychecklist.js"></script>
+</body>
+</html>
